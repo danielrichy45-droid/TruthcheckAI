@@ -94,20 +94,27 @@ export const DashboardView: React.FC<Props> = ({
       {totalEvaluatedTests === 0 && (
         <div className="bg-gradient-to-r from-[#122B20] to-[#1E4333] rounded-xl p-5 text-white shadow-sm border border-[#275340]">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div className="space-y-1.5 max-w-2xl">
-              <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-medium">
-                <Sparkles size={12} />
-                <span>Ready to Test Immediately</span>
+            <div className="flex items-start gap-3.5">
+              <img
+                src="/assets/aistudio/d189c23a-d69d-4e3e-ae76-d01d8d6cf5cf_8a2043c3.png"
+                alt="TruthCheck AI Logo"
+                className="h-14 w-14 rounded-2xl object-cover shadow-md border border-emerald-500/30 shrink-0 hidden sm:block"
+              />
+              <div className="space-y-1.5 max-w-2xl">
+                <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-medium">
+                  <Sparkles size={12} />
+                  <span>Ready to Test Immediately</span>
+                </div>
+                <h2 className="text-lg font-bold tracking-tight">
+                  Evaluate Your First AI Chatbot Response with TruthCheck
+                </h2>
+                <p className="text-xs text-stone-300 leading-relaxed">
+                  We have pre-configured a sample store — <strong>Apex Ridge Outfitters</strong> — with
+                  rigorous shipping, return, warranty, and escalation policies. You can launch a test
+                  run right now, paste sample chatbot answers (both compliant and hallucinated), and
+                  watch Gemini evaluate factual accuracy against real policy evidence.
+                </p>
               </div>
-              <h2 className="text-lg font-bold tracking-tight">
-                Evaluate Your First AI Chatbot Response with TruthCheck
-              </h2>
-              <p className="text-xs text-stone-300 leading-relaxed">
-                We have pre-configured a sample store — <strong>Apex Ridge Outfitters</strong> — with
-                rigorous shipping, return, warranty, and escalation policies. You can launch a test
-                run right now, paste sample chatbot answers (both compliant and hallucinated), and
-                watch Gemini evaluate factual accuracy against real policy evidence.
-              </p>
             </div>
             <div className="flex items-center gap-2 shrink-0">
               <button

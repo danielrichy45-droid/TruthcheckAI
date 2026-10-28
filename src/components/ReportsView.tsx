@@ -207,34 +207,41 @@ export const ReportsView: React.FC<Props> = ({
       <div className="print-container bg-white rounded-xl border border-stone-200/90 shadow-sm p-6 sm:p-8 space-y-6">
         {/* Report Header */}
         <div className="border-b border-stone-200 pb-6 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="text-[11px] font-bold uppercase tracking-wider bg-emerald-800 text-white px-2 py-0.5 rounded">
-                TruthCheck AI Audit Report
-              </span>
-              <span className="text-xs text-stone-400">ID: {currentRun.id}</span>
-            </div>
-            <h2 className="text-xl font-bold text-stone-900 tracking-tight mt-2">
-              {currentRun.name}
-            </h2>
-            <div className="flex items-center gap-4 text-xs text-stone-500 mt-1 flex-wrap">
-              <span className="flex items-center gap-1">
-                <Store size={13} className="text-emerald-800" />
-                <strong>{currentRun.storeName}</strong> ({currentStore?.country},{' '}
-                {currentStore?.currency})
-              </span>
-              <span>•</span>
-              <span className="flex items-center gap-1">
-                <Calendar size={13} />
-                <span>Audited on {new Date(currentRun.createdAt).toLocaleDateString()}</span>
-              </span>
-              <span>•</span>
-              <span>
-                Status:{' '}
-                <strong className="text-stone-800">
-                  {currentRun.status === 'COMPLETED' ? 'Finalized' : 'In Progress'}
-                </strong>
-              </span>
+          <div className="flex items-start gap-4">
+            <img
+              src="/assets/aistudio/d189c23a-d69d-4e3e-ae76-d01d8d6cf5cf_8a2043c3.png"
+              alt="TruthCheck AI Logo"
+              className="h-14 w-14 rounded-2xl object-cover shadow-sm border border-stone-200 shrink-0"
+            />
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-[11px] font-bold uppercase tracking-wider bg-emerald-800 text-white px-2 py-0.5 rounded">
+                  TruthCheck AI Audit Report
+                </span>
+                <span className="text-xs text-stone-400">ID: {currentRun.id}</span>
+              </div>
+              <h2 className="text-xl font-bold text-stone-900 tracking-tight mt-1.5">
+                {currentRun.name}
+              </h2>
+              <div className="flex items-center gap-4 text-xs text-stone-500 mt-1 flex-wrap">
+                <span className="flex items-center gap-1">
+                  <Store size={13} className="text-emerald-800" />
+                  <strong>{currentRun.storeName}</strong> ({currentStore?.country},{' '}
+                  {currentStore?.currency})
+                </span>
+                <span>•</span>
+                <span className="flex items-center gap-1">
+                  <Calendar size={13} />
+                  <span>Audited on {new Date(currentRun.createdAt).toLocaleDateString()}</span>
+                </span>
+                <span>•</span>
+                <span>
+                  Status:{' '}
+                  <strong className="text-stone-800">
+                    {currentRun.status === 'COMPLETED' ? 'Finalized' : 'In Progress'}
+                  </strong>
+                </span>
+              </div>
             </div>
           </div>
 

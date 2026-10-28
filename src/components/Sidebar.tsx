@@ -86,19 +86,23 @@ export const Sidebar: React.FC<Props> = ({
         }`}
       >
         {/* Brand Header */}
-        <div className="p-5 border-b border-[#1B3E2F] flex items-center justify-between">
+        <div className="p-4 border-b border-[#1B3E2F] flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center text-stone-950 shadow-md">
-              <ShieldCheck className="h-6 w-6 stroke-[2.2]" />
-            </div>
+            <img
+              src="/assets/aistudio/d189c23a-d69d-4e3e-ae76-d01d8d6cf5cf_8a2043c3.png"
+              alt="TruthCheck AI Logo"
+              className="h-10 w-10 rounded-xl object-cover shadow-md border border-emerald-500/30 shrink-0"
+            />
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="font-semibold text-base tracking-tight text-white">TruthCheck</span>
+                <span className="font-bold text-base tracking-tight text-white">TruthCheck</span>
                 <span className="text-[10px] font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 px-1.5 py-0.5 rounded border border-emerald-500/30">
                   AI
                 </span>
               </div>
-              <p className="text-[11px] text-stone-400 leading-none mt-1">Ecommerce AI Reliability</p>
+              <p className="text-[10px] uppercase tracking-wider text-emerald-400/80 font-medium leading-none mt-1">
+                Chatbot Accuracy Audits
+              </p>
             </div>
           </div>
           <button
