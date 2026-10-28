@@ -1,0 +1,6 @@
+{
+  "name": "TruthCheck AI",
+  "description": "Ecommerce AI Reliability Testing SaaS to detect incorrect, unsupported, and policy-violating customer support chatbot answers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
